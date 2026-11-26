@@ -1,0 +1,24 @@
+
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<div class="contenedor">
+
+    <h1>Promoción de VERDE BENDITO</h1>
+
+    <h2>Primer cartel</h2>
+
+    <img src="{{ url_for('static', filename='img/cartel1.jpeg') }}"
+         alt="Primer cartel"
+         style="width:100%; max-width:800px; display:block; margin:20px auto;">
+
+    <h2>Segundo cartel</h2>
+
+    <img src="{{ url_for('static', filename='img/cartel2.jpeg') }}"
+         alt="Segundo cartel"
+         style="width:100%; max-width:800px; display:block; margin:20px auto;">
+
+</div>
+
+{% endblock %}

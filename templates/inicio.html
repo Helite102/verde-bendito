@@ -1,0 +1,48 @@
+
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<div class="bienvenida">
+
+    <img src="{{ url_for('static', filename='img/logo.png') }}"
+         alt="Logotipo Verde Bendito"
+         class="logo">
+
+    <h2>¡Bienvenidos a VERDE BENDITO!</h2>
+
+    <p>
+        Somos un proyecto dedicado a conocer los detergentes
+        orgánicos y promover alternativas de limpieza que
+        consideren el cuidado del medio ambiente.
+    </p>
+
+    <h3>Limpiador de superficies</h3>
+
+    <p>Una propuesta de producto ecológico elaborada para nuestro proyecto escolar.</p>
+
+</div>
+
+<div class="contenedores">
+
+    <div class="tarjeta">
+        <h3>🌿 Investigación</h3>
+        <p>Conoce qué son los detergentes orgánicos.</p>
+        <a href="{{ url_for('investigacion') }}">Ver información</a>
+    </div>
+
+    <div class="tarjeta">
+        <h3>🧴 Receta</h3>
+        <p>Conoce los ingredientes y materiales de nuestro limpiador.</p>
+        <a href="{{ url_for('receta') }}">Ver receta</a>
+    </div>
+
+    <div class="tarjeta">
+        <h3>📋 Envase</h3>
+        <p>Observa nuestra etiqueta y las propiedades físicas.</p>
+        <a href="{{ url_for('envase') }}">Ver envase</a>
+    </div>
+
+</div>
+
+{% endblock %}

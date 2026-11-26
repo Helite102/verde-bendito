@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h1>Receta de nuestro limpiador</h1>
+
+<h2>Video 1: Preparación del limpiador</h2>
+
+<video width="500" controls>
+    <source src="{{ url_for('static', filename='Videos/video1.mp4') }}" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+</video>
+
+<h2>Video 2: Elaboración del producto</h2>
+
+<video width="500" controls>
+    <source src="{{ url_for('static', filename='Videos/video2.mp4') }}" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+</video>
+
+{% endblock %}

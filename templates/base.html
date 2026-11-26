@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VERDE BENDITO</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>VERDE BENDITO</h1>
+    <p>Productos ecológicos</p>
+
+    <nav>
+        <a href="{{ url_for('inicio') }}">Inicio</a>
+        <a href="{{ url_for('investigacion') }}">Investigación</a>
+        <a href="{{ url_for('receta') }}">Catálogo</a>
+        <a href="{{ url_for('receta') }}">Receta</a>
+        <a href="{{ url_for('envase') }}">Envase</a>
+        <a href="{{ url_for('creditos') }}">Créditos</a>
+        <a href="{{ url_for('promocion') }}">Promoción</a>
+    </nav>
+</header>
+
+<main>
+    {% block contenido %}
+    {% endblock %}
+</main>
+
+<footer>
+    <p>VERDE BENDITO | Proyecto escolar de Programación</p>
+</footer>
+
+</body>
+</html>

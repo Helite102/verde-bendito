@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h2>Catálogo de detergentes orgánicos</h2>
+
+<p>Conoce más sobre nuestros detergentes orgánicos mediante estos videos.</p>
+
+<div class="tarjeta">
+    <h3>Video 1: Detergentes orgánicos</h3>
+    <video width="100%" controls>
+        <source src="{{ url_for('static', filename='Videos/video1.mp4') }}" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+    </video>
+</div>
+
+<div class="tarjeta">
+    <h3>Video 2: Beneficios de los detergentes orgánicos</h3>
+    <video width="100%" controls>
+        <source src="{{ url_for('static', filename='Videos/video2.mp4') }}" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+    </video>
+</div>
+
+{% endblock %}

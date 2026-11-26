@@ -1,0 +1,77 @@
+
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h2>Diseño de nuestro envase</h2>
+
+<div class="tarjeta">
+    <h3>Identidad de nuestro producto</h3>
+
+    <h2>VERDE BENDITO</h2>
+
+    <p>Limpiador de superficies</p>
+
+    <div class="contenedores">
+
+        <div class="tarjeta">
+            <h3>Logotipo</h3>
+
+            <img src="{{ url_for('static', filename='img/logo.png') }}"
+                 alt="Logotipo Verde Bendito"
+                 class="imagen-producto">
+        </div>
+
+        <div class="tarjeta">
+            <h3>Etiqueta</h3>
+
+            <img src="{{ url_for('static', filename='img/etiqueta.jpeg') }}"
+                 alt="Etiqueta Verde Bendito"
+                 class="imagen-producto">
+        </div>
+
+    </div>
+</div>
+
+<div class="tarjeta">
+    <h3>Propiedades físicas del envase</h3>
+
+    <table>
+        <tr>
+            <th>Propiedad física</th>
+            <th>Resultado</th>
+        </tr>
+
+        <tr>
+            <td>Altura total</td>
+            <td>19 cm</td>
+        </tr>
+
+        <tr>
+            <td>Diámetro</td>
+            <td>4.2 cm</td>
+        </tr>
+
+        <tr>
+            <td>Radio</td>
+            <td>2.1 cm</td>
+        </tr>
+
+        <tr>
+            <td>Volumen geométrico</td>
+            <td>187 cm³</td>
+        </tr>
+
+        <tr>
+            <td>Masa vacía</td>
+            <td>25 g</td>
+        </tr>
+
+        <tr>
+            <td>Masa con líquido</td>
+            <td>105 g</td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}
